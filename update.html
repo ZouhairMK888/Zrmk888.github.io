@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Coach</title>
+    <link rel="stylesheet" href="update.css">
+</head>
+<body>
+<div class="login-box">
+    <div class="card-image"></div>
+    <form action="" method="post">
+        <input type="hidden" name="cin_c" value="<?php echo $coach['CIN_C']; ?>">
+        <div class="user-box">
+            <input type="text" name="nom_c" value="<?php echo $coach['NOM_C']; ?>" required>
+            <label>First Name</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="prenom_c" value="<?php echo $coach['PRENOM_C']; ?>" required>
+            <label>Last Name</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="addresse_c" value="<?php echo $coach['ADDRESSE_C']; ?>" required>
+            <label>Address</label>
+        </div>
+        <div class="user-box">
+            <input type="text" name="num_c" value="<?php echo $coach['NUM_C']; ?>" required>
+            <label>Phone Number</label>
+        </div>
+        <input type="submit" name="update_coach" value="Update Coach" class="insert">
+    </form>
+</div>
+</body>
+</html>
